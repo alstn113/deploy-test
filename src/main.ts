@@ -11,10 +11,7 @@ const bootstrap = async () => {
   const port = configService.get<number>('server.port');
   const logger = new Logger('Main');
 
-  app.enableCors({
-    origin: configService.get<string>('client'),
-    credentials: true,
-  });
+  app.enableCors({});
   app.useGlobalPipes(new ValidationPipe({}));
   app.use(helmet());
 
