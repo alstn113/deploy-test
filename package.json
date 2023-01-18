@@ -12,6 +12,7 @@
     "dev:server": " pnpm --filter server start:dev",
     "prisma:generate": "pnpm --filter server prisma:generate",
     "prisma:migrate": "pnpm --filter server prisma:migrate",
+    "prisma:deploy": "pnpm --filter server prisma:deploy",
     "prisma:studio": "pnpm --filter server prisma:studio"
   },
   "devDependencies": {
